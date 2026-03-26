@@ -80,18 +80,27 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index.html" class="active">Inicio</a></li>
-                            <li><a href="submit.html">Envío de trabajos</a></li>
-                            <li><a href="pc.html">Comités</a></li>
-                            <li><a href="registro.html">Inscripción</a></li>
-                            <li><a href="program.html">Programa</a></li>
-							<li><a href="venue_hotels.html">Sede y alojamiento</a></li>
-                            <li><a href="edanteriores.html">Ediciones anteriores</a></li>
+                            <li><a href="index.html" class="active" data-i18n="nav_home">...</a></li>
+                            <li><a href="submit.html" data-i18n="nav_submit">...</a></li>
+                            <li><a href="pc.html" data-i18n="nav_pc">...</a></li>
+                            <li><a href="registro.html" data-i18n="nav_registro">...</a></li>
+                            <li><a href="program.html" data-i18n="nav_program">...</a></li>
+                            <li><a href="venue_hotels.html" data-i18n="nav_venue">...</a></li>
+                            <li><a href="edanteriores.html" data-i18n="nav_editions">...</a></li>
                             <!-- Divider -->
                             <li><a>&nbsp;</a></li>
                             <!-- End Divider -->
-                            <li><a href="contacto.html">Contacto</a></li>
-                                                        
+                            <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
+                            <!-- Language Toggle -->
+                            <li>
+                                <button id="lang-toggle" onclick="toggleLang()"
+                                    title="Switch to English"
+                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
+                                           color:inherit;cursor:pointer;padding:4px 10px;
+                                           border-radius:4px;font-size:0.9em;font-weight:600;
+                                           margin-left:4px;">EN</button>
+                            </li>
+                            <!-- End Language Toggle -->
                         </ul>
                     </div>
                     <!-- End Main Menu -->
@@ -109,15 +118,15 @@
                         <!-- Hero Content -->
                         <div class="home-content">
                             <div class="wow fadeInUpShort" data-wow-delay=".1s">
-                                <h1 class="opacity-085 mb-20 mb-sm-40">V Congreso Español de Videojuegos</h1>
+                                <h1 class="opacity-085 mb-20 mb-sm-40" data-i18n="index_title">...</h1>
                             </div>
                             <div class="wow fadeInUpShort" data-wow-delay=".2s">
                                 <p class="hs-line-6 ">
-                                    Madrid, 3 y 4 de septiembre de 2026
+                                    <span data-i18n="index_date">...</span>
                                 </p>
                             </div><br><br>
                             <div>
-                                <p class="strong">Celebrado de forma simultánea con IEEE Conference on Games (IEEE CoG 2026).<br> Se compartirán algunas sesiones plenarias:</p>
+                                <p class="strong" data-i18n="index_cog_text">...</p>
                                 <p>
                                     <a href="https://cog2026.org/">
                                         <img src="img/cog2026.jpg" style="height:150px; max-width:600px; width:auto; border-radius:25px" alt="CoG 2026">
@@ -143,10 +152,10 @@
                         <div class="row wow fadeInUpShort">
                             <!-- div class="col-md-8 offset-md-2 text-center" -->
                             <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                            <p class="lead">La quinta edición del Congreso Español de Videojuegos (CEV 2026), que acogerá la <a href="http://www.ucm.es" target="_blank">Universidad Complutense de Madrid</a>, tiene como objetivo acercar las visiones de <b>investigadores/as y profesionales del diseño y desarrollo de videojuegos</b>, principalmente de empresas y universidades españolas.</p>
-							<p class="lead">Dado el carácter multidisciplinar de la creación de videojuegos, el congreso ofrecerá un foro para la presentación y discusión de propuestas enfocadas en diferentes disciplinas, teniendo como nexo común los videojuegos. Éstos serán entornos en los que <b>desarrollar y aplicar nuevas técnicas y estudios a nivel académico o profesional</b> y, a su vez, se podrán usar como herramienta para alcanzar o promover otros objetivos, como los que plantea la gamificación o los juegos serios.</p>
-							<p class="lead">CEV 2026 propone la presentación de <b>estudios originales, así como propuestas, pruebas de concepto o ideas en una fase temprana de su desarrollo</b>. Además, ofrece la posibilidad de realizar divulgación sobre <b>trabajos científicos ya publicados</b>, con el fin de dar una mayor visibilidad a las investigaciones llevadas a cabo en nuestro país.</p>
-							<p class="lead">Por último, pero no menos importante, el congreso quiere animar a futuros desarrolladores/as e investigadores/as para que participen presentando sus <b>Trabajos Fin de Grado, Trabajos Fin de Máster o Tesis en desarrollo</b> dentro del ámbito de los videojuegos.</p>
+                            <p class="lead" data-i18n="index_p1">...</p>
+							<p class="lead" data-i18n="index_p2">...</p>
+							<p class="lead" data-i18n="index_p3">...</p>
+							<p class="lead" data-i18n="index_p4">...</p>
                
                         </div>
                         
@@ -224,5 +233,6 @@
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
         
+            <script src="js/i18n.js"></script>
     </body>
 </html>

@@ -80,18 +80,27 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="submit.html">Envío de trabajos</a></li>
-                            <li><a href="pc.html"  class="active">Comités</a></li>
-                            <li><a href="registro.html">Inscripción</a></li>
-                            <li><a href="program.html">Programa</a></li>
-							<li><a href="venue_hotels.html">Sede y alojamiento</a></li>
-                            <li><a href="edanteriores.html">Ediciones anteriores</a></li>
+                            <li><a href="index.html" data-i18n="nav_home">...</a></li>
+                            <li><a href="submit.html" data-i18n="nav_submit">...</a></li>
+                            <li><a href="pc.html" class="active" data-i18n="nav_pc">...</a></li>
+                            <li><a href="registro.html" data-i18n="nav_registro">...</a></li>
+                            <li><a href="program.html" data-i18n="nav_program">...</a></li>
+                            <li><a href="venue_hotels.html" data-i18n="nav_venue">...</a></li>
+                            <li><a href="edanteriores.html" data-i18n="nav_editions">...</a></li>
                             <!-- Divider -->
                             <li><a>&nbsp;</a></li>
                             <!-- End Divider -->
-                            <li><a href="contacto.html">Contacto</a></li>
-                                                        
+                            <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
+                            <!-- Language Toggle -->
+                            <li>
+                                <button id="lang-toggle" onclick="toggleLang()"
+                                    title="Switch to English"
+                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
+                                           color:inherit;cursor:pointer;padding:4px 10px;
+                                           border-radius:4px;font-size:0.9em;font-weight:600;
+                                           margin-left:4px;">EN</button>
+                            </li>
+                            <!-- End Language Toggle -->
                         </ul>
                     </div>
                     <!-- End Main Menu -->
@@ -111,7 +120,7 @@
                         <!-- Hero Content -->
                         <div class="home-content">
                             <div class="wow fadeInUpShort" data-wow-delay=".2s">
-                                <h1 class="mt-xs-60 mb-xs-60">Comités</h1>
+                                <h1 class="mt-xs-60 mb-xs-60" data-i18n="pc_hero">...</h1>
 
                             </div>
                         </div>
@@ -130,20 +139,20 @@
 
                                 <!-- p class="lead"><strong>Se publicará la información próximamente</strong></p -->
 
-                                <h2>Comité organizador</h2><br>
+                                <h2 data-i18n="pc_org_h">...</h2><br>
                                 <ul class="bala">
-                                    <li class="lead"><b>Presidente del congreso</b>: Carlos León Aznar</li>
-                                    <li class="lead"><b>Presidente del comité de programa</b>: Ismael Sagredo Olivenza</li>
-									<li class="lead"><b>Presidente de organización local</b>: Guillermo Jiménez Díaz</li>
-                                    <li class="lead"><b>Webmaster y responsable de difusión</b>: Alejandro Villar Rubio</li>
-                                    <li class="lead"><b>Organización local</b>: Carlos León Aznar, Ismael Sagredo Olivenza, Guillermo Jiménez Díaz, Alejandro Villar Rubio</li>
+                                    <li class="lead" data-i18n="pc_role1">...</li>
+                                    <li class="lead" data-i18n="pc_role2">...</li>
+									<li class="lead" data-i18n="pc_role3">...</li>
+                                    <li class="lead" data-i18n="pc_role4">...</li>
+                                    <li class="lead" data-i18n="pc_role5">...</li>
                                 </ul>
 
                                 <br>
                                 <hr class="lead"><br>
-                                <h2>Comité de programa</h2><br>
+                                <h2 data-i18n="pc_prog_h">...</h2><br>
 
-                                <p class="lead">En proceso de publicación...</p>
+                                <p class="lead" data-i18n="pc_prog_wip">...</p>
                                 
                                 <!--<ul class="bala">
                                     <li class="lead">Alejandro Lozano Muñoz  ( Universidad de Salamanca )</li>
@@ -157,7 +166,6 @@
 <li class="lead">Carlos Blanco Bueno  ( Universidad de Cantabria )</li>
 <li class="lead">Carlos León Aznar  ( Universidad Complutense de Madrid )</li>
 <li class="lead">Carlos Marín Lora  ( Universitat Zaragoza )</li>
-<li class="lead">Elena Shliakhovchuk  ( Universitat Jaume I )</li>
 <li class="lead">Fátima Gil ( Universidad de Burgos )</li>
 <li class="lead">Federico Peinado  ( Universidad Complutense de Madrid )</li>
 <li class="lead">Francisco Ignacio Revuelta Domínguez  ( Universidad de Extremadura )</li>
@@ -274,5 +282,6 @@
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
         
+            <script src="js/i18n.js"></script>
     </body>
 </html>

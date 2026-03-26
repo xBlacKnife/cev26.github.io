@@ -80,18 +80,27 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="submit.html" class="active">Envío de trabajos</a></li>
-                            <li><a href="pc.html">Comités</a></li>
-                            <li><a href="registro.html">Inscripción</a></li>
-                            <li><a href="program.html">Programa</a></li>
-							<li><a href="venue_hotels.html">Sede y alojamiento</a></li>
-                            <li><a href="edanteriores.html">Ediciones anteriores</a></li>
+                            <li><a href="index.html" data-i18n="nav_home">...</a></li>
+                            <li><a href="submit.html" class="active" data-i18n="nav_submit">...</a></li>
+                            <li><a href="pc.html" data-i18n="nav_pc">...</a></li>
+                            <li><a href="registro.html" data-i18n="nav_registro">...</a></li>
+                            <li><a href="program.html" data-i18n="nav_program">...</a></li>
+                            <li><a href="venue_hotels.html" data-i18n="nav_venue">...</a></li>
+                            <li><a href="edanteriores.html" data-i18n="nav_editions">...</a></li>
                             <!-- Divider -->
                             <li><a>&nbsp;</a></li>
                             <!-- End Divider -->
-                            <li><a href="contacto.html">Contacto</a></li>
-                                                        
+                            <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
+                            <!-- Language Toggle -->
+                            <li>
+                                <button id="lang-toggle" onclick="toggleLang()"
+                                    title="Switch to English"
+                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
+                                           color:inherit;cursor:pointer;padding:4px 10px;
+                                           border-radius:4px;font-size:0.9em;font-weight:600;
+                                           margin-left:4px;">EN</button>
+                            </li>
+                            <!-- End Language Toggle -->
                         </ul>
                     </div>
                     <!-- End Main Menu -->
@@ -111,7 +120,7 @@
                         <!-- Hero Content -->
                         <div class="home-content">
                             <div class="wow fadeInUpShort" data-wow-delay=".2s">
-                                <h1 class="mt-xs-60 mb-xs-60">Envío de trabajos</h1>
+                                <h1 class="mt-xs-60 mb-xs-60" data-i18n="submit_hero">...</h1>
 
                             </div>
                         </div>
@@ -133,28 +142,25 @@
 
                                 <div class="mb-70 mb-xs-10">
                                     <header>
-                                        <h2>
-                                            Fechas importantes
-                                        </h2>
+                                        <h2 data-i18n="submit_dates_h">...</h2>
                                     </header>
                                     
                                     <!--<p class="lead">En proceso de publicación...</p>-->
 
                                     
-                                    <p class="lead"><strong>Trabajos regulares y trabajos cortos:</strong></p>
+                                    <p class="lead"><strong data-i18n="submit_regular_label">...</strong></p>
                                     <ul class="bala">
                                         <!--<li class="lead">Recepción de trabajos: <font color="gray"><del>20</del></font> <b>30 de Junio de 2026</b></li>-->
-                                        <li class="lead">Recepción de trabajos: 14 de junio de 2026</li>
-                                        <li class="lead">Notificación a los autores: 15 de julio de 2026</li>
-                                        <li class="lead">Versión definitiva de los trabajos aceptados: 25 de julio de 2026
-                                        </li>
+                                        <li class="lead" data-i18n="submit_date_reception">...</li>
+                                        <li class="lead" data-i18n="submit_date_notif">...</li>
+                                        <li class="lead" data-i18n="submit_date_final">...</li>
                                     </ul>
 
-                                    <p class="lead"><strong>Resto de contribuciones (Trabajos ya publicados; TFG/TFM/Tesis):</strong></p>
+                                    <p class="lead"><strong data-i18n="submit_other_label">...</strong></p>
                                     <ul class="bala">
-                                        <li class="lead">Recepción de trabajos: 12 de julio de 2026</li>
-                                        <li class="lead">Notificación a los autores: 19 de julio de 2026</li>
-                                        <li class="lead">Versión definitiva de los trabajos aceptados: 25 de julio de 2026</li>
+                                        <li class="lead" data-i18n="submit_date_reception2">...</li>
+                                        <li class="lead" data-i18n="submit_date_notif2">...</li>
+                                        <li class="lead" data-i18n="submit_date_final2">...</li>
                                     </ul>
                                     
                                 </div>
@@ -162,47 +168,38 @@
                                 <div class="mb-20 mb-xs-10">
 
                                     <header>
-                                        <h2>
-                                            Temas de interés
-                                        </h2>
+                                        <h2 data-i18n="submit_topics_h">...</h2>
                                     </header>
-                                    <p class="lead">Se invita a los investigadores y profesionales a enviar sus
-                                        contribuciones en el campo del entretenimiento digital, tanto trabajos
-                                        originales de investigación como desarrollos tecnológicos de aplicaciones
-                                        relacionados
-                                        con los siguientes temas:</p>
+                                    <p class="lead" data-i18n="submit_topics_intro">...</p>
 
                                     <ul class="bala">
-                                        <li class="lead">Accesibilidad</li>
-                                        <li class="lead">Aspectos culturales del diseño de videojuegos</li>
-                                        <li class="lead">Arte y entretenimiento</li>
-                                        <li class="lead">Computación afectiva</li>
-                                        <li class="lead">Comunicación</li>
-                                        <li class="lead">Diseño de sonido interactivo</li>
-                                        <li class="lead">Educación</li>
-                                        <li class="lead">Edutainment</li>
-                                        <li class="lead">Entretenimiento ubicuo</li>
-                                        <li class="lead">Exergaming</li>
-                                        <li class="lead">Física para videojuegos</li>
-                                        <li class="lead">Gamificación</li>
-                                        <li class="lead">Generación procedimental de contenido</li>
-                                        <li class="lead">Inteligencia Artificial para videojuegos</li>
-                                        <li class="lead">Informática gráfica para videojuegos</li>
-                                        <li class="lead">Juegos Serios</li>
-                                        <li class="lead">Localización y traducción de videojuegos</li>
-                                        <li class="lead">Metodologías, paradigmas y herramientas para el desarrollo de
-                                            aplicaciones de entretenimiento</li>
-                                        <li class="lead">Música y sonido</li>
-                                        <li class="lead">Narración interactiva</li>
-                                        <li class="lead">Psicología (del jugador, de los personajes del juego, etc).
-                                        </li>
-                                        <li class="lead">Producción</li>
-                                        <li class="lead">Publicidad</li>
-                                        <li class="lead">Realidad Virtual/aumentada/mixta/alternativa</li>
-                                        <li class="lead">Teoría del videojuego</li>
-                                        <li class="lead">Videojuegos y salud</li>
-                                        <li class="lead">Otras aplicaciones o temas relacionados con el desarrollo o
-                                            empleo de los videojuegos y el software de entretenimiento</li>
+                                        <li class="lead" data-i18n="submit_t1">...</li>
+                                        <li class="lead" data-i18n="submit_t2">...</li>
+                                        <li class="lead" data-i18n="submit_t3">...</li>
+                                        <li class="lead" data-i18n="submit_t4">...</li>
+                                        <li class="lead" data-i18n="submit_t5">...</li>
+                                        <li class="lead" data-i18n="submit_t6">...</li>
+                                        <li class="lead" data-i18n="submit_t7">...</li>
+                                        <li class="lead" data-i18n="submit_t8">...</li>
+                                        <li class="lead" data-i18n="submit_t9">...</li>
+                                        <li class="lead" data-i18n="submit_t10">...</li>
+                                        <li class="lead" data-i18n="submit_t11">...</li>
+                                        <li class="lead" data-i18n="submit_t12">...</li>
+                                        <li class="lead" data-i18n="submit_t13">...</li>
+                                        <li class="lead" data-i18n="submit_t14">...</li>
+                                        <li class="lead" data-i18n="submit_t15">...</li>
+                                        <li class="lead" data-i18n="submit_t16">...</li>
+                                        <li class="lead" data-i18n="submit_t17">...</li>
+                                        <li class="lead" data-i18n="submit_t18">...</li>
+                                        <li class="lead" data-i18n="submit_t19">...</li>
+                                        <li class="lead" data-i18n="submit_t20">...</li>
+                                        <li class="lead" data-i18n="submit_t21">...</li>
+                                        <li class="lead" data-i18n="submit_t22">...</li>
+                                        <li class="lead" data-i18n="submit_t23">...</li>
+                                        <li class="lead" data-i18n="submit_t24">...</li>
+                                        <li class="lead" data-i18n="submit_t25">...</li>
+                                        <li class="lead" data-i18n="submit_t26">...</li>
+                                        <li class="lead" data-i18n="submit_t27">...</li>
                                     </ul>
                                 </div>
 
@@ -221,20 +218,14 @@
 
 <section>
                                     <header>
-                                        <h2>Modalidades de participación</h2>
+                                        <h2 data-i18n="submit_modes_h">...</h2>
                                     </header>
-									<p>Todas las contribuciones podrán estar redactadas en castellano o en inglés. </p>
+									<p data-i18n="submit_modes_lang">...</p>
 									
                                     <ol class="num">
-                                        <li class="lead"><strong>Trabajos Regulares</strong>: Trabajos que muestran
-                                            resultados de investigación y aplicaciones originales. Éstos pueden tener
-                                            una extensión máxima de 12 páginas en formato CEUR-ART de 1 columna. Los trabajos regulares 
-											aceptados se publicarán en las actas del congreso.<br>
-                                            </li>
+                                        <li class="lead" data-i18n="submit_mode1">...</li>
 
-                                        <li class="lead"><strong>Trabajos cortos</strong>: Los trabajos cortos presentarán resultados recientes, 
-										    trabajos en curso y nuevas ideas. Los trabajos, de como máximo 4 páginas en formato CEUR-ART de 1 columna. 
-											Los trabajos cortos aceptados se publicarán en las actas del congreso. </li>
+                                        <li class="lead" data-i18n="submit_mode2">...</li>
 
                                         <!-- li class="lead"><strong>Demostración de herramientas</strong>: Esta opción está
                                             orientada a la
@@ -242,14 +233,7 @@
                                             teóricas. Las propuestas de demostraciones de herramientas podrán tener una
                                             extensión máxima de 4 páginas en formato LNCS.</li -->
 
-                                        <li class="lead"><strong>Divulgación de trabajos ya publicados</strong>: El CEV
-                                            es un punto de encuentro entre la comunidad de investigación en videojuegos
-                                            en España. Por ello, se invita a la presentación de trabajos recientes de
-                                            calidad ya publicados en otros congresos o revistas. Dichos artículos
-                                            aparecerán en el programa, y se presentarán como el resto de ponencias del
-                                            CEV, pero no aparecerán en las actas oficiales del congreso. El envío se
-                                            deberá realizar dentro del plazo establecido a través del sistema de envíos en la modalidad
-                                            correspondiente.</li>
+                                        <li class="lead" data-i18n="submit_mode3">...</li>
 
                                         <!-- <li class="lead"><strong>Posters</strong>: Los posters presentarán resultados
                                             recientes, trabajos en curso, ideas nuevas y otros proyectos que puedan ser
@@ -259,16 +243,7 @@
                                             en pdf a la dirección de correo electrónico info@secivi.org, indicando en el
                                             asunto la modalidad correspondiente.</li> -->
 
-                                        <li class="lead"><strong>TFG/TFM/Tesis(en desarrollo o terminada)</strong>: Se podrán presentar trabajos de TFG o
-                                            TFM relacionados con el ámbito del congreso que hayan sido defendidos en el
-                                            curso 2025-26, excepto las tesis, que pueden estar en desarrollo. 
-											Se enviará la memoria del trabajo y un resumen de una página, más una imagen representativa del mismo. 
-											Los seleccionados se publicarán en un apartado especial en la web del congreso y se presentarán en el congreso en una sesión dedicada.
-                                            Un jurado formado por miembros del Comité de Programa seleccionará el mejor
-                                            TFG, que podrá exponerse como un Trabajo corto, y el mejor TFM y Tesis, que se
-                                            presentarán como Trabajos regulares, si los autores así lo desean. El envío se
-                                            deberá realizar dentro del plazo establecido a través del sistema de envíos en la modalidad
-                                            correspondiente.</li>
+                                        <li class="lead" data-i18n="submit_mode4">...</li>
 
                                         <!-- <li class="lead"><strong>Tesis en 6 minutos</strong>: Con el objetivo de dar a
                                             conocer el trabajo realizado por estudiantes de doctorado y nuevos doctores,
@@ -284,26 +259,13 @@
 
                                 <section>
                                     <header>
-                                        <h2>Instrucciones para autores</h2>
+                                        <h2 data-i18n="submit_author_h">...</h2>
                                     </header>
 
-                                    <p class="lead">Los envíos de las modalidades "trabajos regulares" y "trabajos
-                                        cortos" deberán usar la plantilla CEUR-ART de 1 columna, disponible
-                                        aquí para LaTeX y DOCX: <a
-                                            href="http://ceur-ws.org/Vol-XXX/CEURART.zip">http://ceur-ws.org/Vol-XXX/CEURART.zip</a>.
-                                        
+                                    <p class="lead" data-i18n="submit_author_p1">...</p>
 										
-									<p class="lead">El envío se realizará a través de la plataforma EasyChair
-                                        (<a
-                                            href="https://easychair.org/my/conference?conf=cev26">https://easychair.org/my/conference?conf=cev26</a>),
-                                        seleccionando la modalidad de participación deseada en el formulario de envío. 
-									</p>
-									<p class="lead">Los trabajos regulares o cortos seleccionados se publicarán en las actas del congreso, con ISBN<!--las cuales tendrán ISBN 
-									    (se informará más adelante la editorial)-->. 
-										Para que un trabajo pueda ser incluido en las actas al menos uno de los autores debe
-                                        registrarse en el congreso antes de la fecha límite para el envío de la versión definitiva de los artículos
-                                        aceptados.
-                                    </p>
+									<p class="lead" data-i18n="submit_author_p2">...</p>
+									<p class="lead" data-i18n="submit_author_p3">...</p>
 
 
 
@@ -401,5 +363,6 @@
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
         
+            <script src="js/i18n.js"></script>
     </body>
 </html>

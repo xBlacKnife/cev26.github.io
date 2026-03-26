@@ -80,18 +80,27 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="submit.html">Envío de trabajos</a></li>
-                            <li><a href="pc.html">Comités</a></li>
-                            <li><a href="registro.html"   class="active">Inscripción</a></li>
-							<li><a href="program.html">Programa</a></li>
-							<li><a href="venue_hotels.html">Sede y alojamiento</a></li>
-                            <li><a href="edanteriores.html">Ediciones anteriores</a></li>
+                            <li><a href="index.html" data-i18n="nav_home">...</a></li>
+                            <li><a href="submit.html" data-i18n="nav_submit">...</a></li>
+                            <li><a href="pc.html" data-i18n="nav_pc">...</a></li>
+                            <li><a href="registro.html" class="active" data-i18n="nav_registro">...</a></li>
+                            <li><a href="program.html" data-i18n="nav_program">...</a></li>
+                            <li><a href="venue_hotels.html" data-i18n="nav_venue">...</a></li>
+                            <li><a href="edanteriores.html" data-i18n="nav_editions">...</a></li>
                             <!-- Divider -->
                             <li><a>&nbsp;</a></li>
                             <!-- End Divider -->
-                            <li><a href="contacto.html">Contacto</a></li>
-                                                        
+                            <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
+                            <!-- Language Toggle -->
+                            <li>
+                                <button id="lang-toggle" onclick="toggleLang()"
+                                    title="Switch to English"
+                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
+                                           color:inherit;cursor:pointer;padding:4px 10px;
+                                           border-radius:4px;font-size:0.9em;font-weight:600;
+                                           margin-left:4px;">EN</button>
+                            </li>
+                            <!-- End Language Toggle -->
                         </ul>
                     </div>
                     <!-- End Main Menu -->
@@ -111,7 +120,7 @@
                         <!-- Hero Content -->
                         <div class="home-content">
                             <div class="wow fadeInUpShort" data-wow-delay=".2s">
-                                <h1 class="mt-xs-60 mb-xs-60">Inscripción</h1>
+                                <h1 class="mt-xs-60 mb-xs-60" data-i18n="reg_hero">...</h1>
 
                             </div>
                         </div>
@@ -129,14 +138,11 @@
                         <div class="row">
                             <div class="col-md-8 offset-md-2 wow fadeInLeft">
 
-                                <p class="lead">La inscripción de uno de los autores es necesaria para la presentación
-                                    de trabajos aceptados en el congreso. La inscripción <b>cubrirá hasta 2 trabajos</b> e incluye la cuota de socio a la
-                                    Sociedad Española para las Ciencias del Videojuego (<a href="http://secivi.org" target="_blank">SECiVi</a>) durante 2 años.</p>
+                                <p class="lead" data-i18n="reg_p1">...</p>
 
-                                <p class="lead">La asistencia a las presentaciones es gratuita, aunque es necesario
-                                    inscribirse.</p>
+                                <p class="lead" data-i18n="reg_p2">...</p>
 
-                                <p class="lead">En proceso de publicación...</p>
+                                <p class="lead" data-i18n="reg_p3">...</p>
 
                                 <!--
                                 <div class="align-center mb-40">
@@ -328,5 +334,6 @@
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
         
+            <script src="js/i18n.js"></script>
     </body>
 </html>

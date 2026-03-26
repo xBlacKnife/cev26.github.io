@@ -64,7 +64,7 @@
             <nav class="main-nav dark transparent stick-fixed wow-menubar">
                 <div class="full-wrapper relative clearfix">
                     
-                    <!-- Logo ( * your text or image into link tag *) -->
+                    <!-- Logo -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="index.html" class="logo">
                             <img src="img/secivi-white-old.png" alt="Secivi" width="152" height="54" />
@@ -74,24 +74,33 @@
                     <!-- Mobile Menu Button -->
                     <div class="mobile-nav" role="button" tabindex="0">
                         <i class="fa fa-bars"></i>
-                        <span class="sr-only">Menú</span>
+                        <span class="sr-only">Menu</span>
                     </div>
                                         
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="submit.html">Envío de trabajos</a></li>
-                            <li><a href="pc.html">Comités</a></li>
-                            <li><a href="registro.html">Inscripción</a></li>
-                            <li><a href="program.html">Programa</a></li>
-							<li><a href="venue_hotels.html" class="active">Sede y alojamiento</a></li>
-                            <li><a href="edanteriores.html">Ediciones anteriores</a></li>
+                            <li><a href="index.html" data-i18n="nav_home">...</a></li>
+                            <li><a href="submit.html" data-i18n="nav_submit">...</a></li>
+                            <li><a href="pc.html" data-i18n="nav_pc">...</a></li>
+                            <li><a href="registro.html" data-i18n="nav_registro">...</a></li>
+                            <li><a href="program.html" data-i18n="nav_program">...</a></li>
+                            <li><a href="venue_hotels.html" class="active" data-i18n="nav_venue">...</a></li>
+                            <li><a href="edanteriores.html" data-i18n="nav_editions">...</a></li>
                             <!-- Divider -->
                             <li><a>&nbsp;</a></li>
                             <!-- End Divider -->
-                            <li><a href="contacto.html">Contacto</a></li>
-                                                        
+                            <li><a href="contacto.html" data-i18n="nav_contact">...</a></li>
+                            <!-- Language Toggle -->
+                            <li>
+                                <button id="lang-toggle" onclick="toggleLang()"
+                                    title="Switch to English"
+                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
+                                           color:inherit;cursor:pointer;padding:4px 10px;
+                                           border-radius:4px;font-size:0.9em;font-weight:600;
+                                           margin-left:4px;">EN</button>
+                            </li>
+                            <!-- End Language Toggle -->
                         </ul>
                     </div>
                     <!-- End Main Menu -->
@@ -103,15 +112,10 @@
             <main id="main">    
             
                 <!-- Home Section -->
-                    <!--section class="home-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/alhambra.jpg" id="home">
-                    <div class="container fixed-height-medium d-flex align-items-center"-->
-                    <section class="page-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/madrid.jpeg" id="home">
+                <section class="page-section bg-dark-alfa-70 parallax-3 light-content" data-background="img/madrid.jpeg" id="home">
                     <div class="container">
-
                         <!-- Hero Content -->
-                        
                         <!-- End Hero Content -->
-                                                
                     </div>
                 </section>
                 <!-- End Home Section -->
@@ -123,132 +127,115 @@
                         <div class="row">
                             <div class="col-md-8 offset-md-2 wow fadeInLeft">
 
-                                <!-- p class="lead"><strong>Se publicará la información próximamente</strong></p -->
-
-                                <h2>Lugar de Celebración</h2><br>
+                                <h2 data-i18n="venue_place_h">...</h2><br>
                                 
-								<p>CEV'26 tiene lugar en la <a href="https://ccinformacion.ucm.es">Facultad de Ciencias de la Información de la Universidad Complutense de Madrid</a> (<a
-                                        href="https://maps.app.goo.gl/w5s4qQXmWMqPYmMv5">ubicación</a>).<br><br>
-										
-								<img src="img/ccinfo1.jpg" width="600"><br><br> 
-								<img src="img/ccinfo2.jpg" width="600"><br><br> 
-								<img src="img/ccinfo3.jpg" width="600">
+                                <p><span data-i18n="venue_place_p">...</span><br><br>
 								
+                                <img src="img/ccinfo1.jpg" width="600"><br><br> 
+                                <img src="img/ccinfo2.jpg" width="600"><br><br> 
+                                <img src="img/ccinfo3.jpg" width="600">
+                                
                             </div>
                         </div>
-								
 
-                                <br>
-                                <hr class="lead"><br>
-								
-								<div class="row">
-                                <div class="col-md-8 offset-md-2 wow fadeInLeft">
-                                
-								<h2>Alojamiento (Recomendado)</h2><br>
-								
-								<p class="lead"><a
-                                        href="https://www.apartohotel-rosales.com">Aparto-Hotel Rosales (3*) ~ 165€/noche (habitación doble) - 220€/noche (apartamento) </a><br>
-                                <!-- <img src="img/nh.jpg"> -->
-								<i>C. del Marqués de Urquijo, 23</i> [Cerca del centro de la ciudad]<br>
-                                Metro Línea 6 (aprox. 21 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Bus 82, 132 (aprox. 23 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Caminando (aprox. 34 minutos hasta la Fac. de Ciencias de la Información)<br><!--<br>
-								
-								Hay que reservar por teléfono: 958282913   o   958089920 
-								e indicar que sois <b>asistentes al CEV</b>.<br>
-								<i>>>> Mantendrán un cupo de habitaciones bloqueadas hasta el día 12/09 <<<</i>-->
-								</p>
-								
-								<!--<br>
-								
-								También os recomendamos estos otros hoteles (sin orden de preferencia):</p>-->
+                        <br>
+                        <hr class="lead"><br>
+                        
+                        <div class="row">
+                        <div class="col-md-8 offset-md-2 wow fadeInLeft">
+                        
+                        <h2 data-i18n="venue_hotels_h">...</h2><br>
 
-                                <p class="lead"><a
-                                        href="https://www.motel-one.com/es/">Motel One Madrid - Plaza de España (4*) ~ 210€/noche (sin desayuno) - 226€/noche (con desayuno)</a><br>
-                                <!-- <img src="img/nh.jpg"> -->
-								<i>C. del Tutor, 1 </i> [Cerca del centro de la ciudad]<br>
-                                Metro Línea 6 (aprox. 25 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Bus 133 (aprox. 20 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Caminando (aprox. 40 minutos hasta la Fac. de Ciencias de la Información)<br>
+                        <!-- Hotel 1: Aparto-Hotel Rosales -->
+                        <p class="lead">
+                            <a href="https://www.apartohotel-rosales.com">Aparto-Hotel Rosales (3*) ~ 165€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_double_room">habitación doble</span>) - 220€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_apartment">apartamento</span>)</a><br>
+                            <i>C. del Marqués de Urquijo, 23</i> [<span data-i18n="venue_near_centre">...</span>]<br>
+                            <span data-i18n="venue_metro">...</span> (<span data-i18n="venue_approx">aprox.</span> 21 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_bus_line">Bus</span> 82, 132 (<span data-i18n="venue_approx">aprox.</span> 23 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_walk">...</span> (<span data-i18n="venue_approx">aprox.</span> 34 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                        </p>
 
+                        <!-- Hotel 2: Motel One -->
+                        <p class="lead">
+                            <a href="https://www.motel-one.com/es/">Motel One Madrid - Plaza de España (4*) ~ 210€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_no_breakfast">sin desayuno</span>) - 226€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_with_breakfast">con desayuno</span>)</a><br>
+                            <i>C. del Tutor, 1</i> [<span data-i18n="venue_near_centre">...</span>]<br>
+                            <span data-i18n="venue_metro">...</span> (<span data-i18n="venue_approx">aprox.</span> 25 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_bus_line">Bus</span> 133 (<span data-i18n="venue_approx">aprox.</span> 20 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_walk">...</span> (<span data-i18n="venue_approx">aprox.</span> 40 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                        </p>
 
-                                <p class="lead"><a
-                                        href="https://www.marriott.com/en-us/hotels/madpp-madrid-marriott-hotel-princesa-plaza/overview/">Hotel Princesa Plaza (4*) ~ 305€/noche</a><br>
-                                <!-- <img src="img/nh.jpg"> -->
-								<i>C. de Serrano Jover, 3</i> [Cerca del centro de la ciudad]<br>
-								Metro Línea 6 (aprox. 20 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Bus 133 (aprox. 17 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Caminando (aprox. 34 minutos hasta la Fac. de Ciencias de la Información)<br>
-								
-								<p class="lead"><a
-                                        href="https://www.muraltomadridprincesa.com">Muralto Madrid Princesa ~ 200€/noche (apartamento)</a><br>
-                                <!-- <img src="img/nh.jpg"> -->
-								<i>C. del Buen Suceso, 3</i> [Centro de la ciudad]<br>
-								Metro Línea 6 (aprox. 21 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Bus 82-132-133 (aprox. 18-23 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Caminando (aprox. 34 minutos hasta la Fac. de Ciencias de la Información)<br>
-								
-								
-								<p class="lead"><a
-                                        href="https://www.metropolitano-hotel.com">VP SOGNIO Metropolitano (4*) ~ 185€/noche (doble sin desayuno) - 205 (doble con desayuno)</a><br>
-                                <!-- <img src="img/nh.jpg"> -->
-								<i>Av. de la Reina Victoria, 12</i> [Lejos del centro de la ciudad, pero bien comunicado]<br>
-								Metro Línea 6 (aprox. 20 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Bus F (aprox. 16 minutos hasta la Fac. de Ciencias de la Información) <br>
-								Caminando (aprox. 27 minutos hasta la Fac. de Ciencias de la Información)<br>
-								
+                        <!-- Hotel 3: Hotel Princesa Plaza -->
+                        <p class="lead">
+                            <a href="https://www.marriott.com/en-us/hotels/madpp-madrid-marriott-hotel-princesa-plaza/overview/">Hotel Princesa Plaza (4*) ~ 305€/<span data-i18n="venue_night">noche</span></a><br>
+                            <i>C. de Serrano Jover, 3</i> [<span data-i18n="venue_near_centre">...</span>]<br>
+                            <span data-i18n="venue_metro">...</span> (<span data-i18n="venue_approx">aprox.</span> 20 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_bus_line">Bus</span> 133 (<span data-i18n="venue_approx">aprox.</span> 17 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_walk">...</span> (<span data-i18n="venue_approx">aprox.</span> 34 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                        </p>
 
-								<p></br></br> Tened en cuenta que los precios son orientativos y que esas fechas son muy demandadas en Madrid, por lo que aconsejamos reservar cuanto antes.
-								</div>
-								</div>
-								
-                            </div>
+                        <!-- Hotel 4: Muralto Madrid Princesa -->
+                        <p class="lead">
+                            <a href="https://www.muraltomadridprincesa.com">Muralto Madrid Princesa ~ 200€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_apartment">apartamento</span>)</a><br>
+                            <i>C. del Buen Suceso, 3</i> [<span data-i18n="venue_city_centre">...</span>]<br>
+                            <span data-i18n="venue_metro">...</span> (<span data-i18n="venue_approx">aprox.</span> 21 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_bus_line">Bus</span> 82-132-133 (<span data-i18n="venue_approx">aprox.</span> 18-23 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_walk">...</span> (<span data-i18n="venue_approx">aprox.</span> 34 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                        </p>
+
+                        <!-- Hotel 5: VP SOGNIO Metropolitano -->
+                        <p class="lead">
+                            <a href="https://www.metropolitano-hotel.com">VP SOGNIO Metropolitano (4*) ~ 185€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_double">doble</span> <span data-i18n="venue_no_breakfast">sin desayuno</span>) - 205€/<span data-i18n="venue_night">noche</span> (<span data-i18n="venue_double">doble</span> <span data-i18n="venue_with_breakfast">con desayuno</span>)</a><br>
+                            <i>Av. de la Reina Victoria, 12</i> [<span data-i18n="venue_far_centre">...</span>]<br>
+                            <span data-i18n="venue_metro">...</span> (<span data-i18n="venue_approx">aprox.</span> 20 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_bus_line">Bus</span> F (<span data-i18n="venue_approx">aprox.</span> 16 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                            <span data-i18n="venue_walk">...</span> (<span data-i18n="venue_approx">aprox.</span> 27 <span data-i18n="venue_minutes">minutos</span> <span data-i18n="venue_to_faculty">hasta la Fac. de Ciencias de la Información</span>)<br>
+                        </p>
+
+                        <p><br><br><span data-i18n="venue_note">...</span></p>
+
                         </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
             <!-- End About Section -->
 
-                
             </main>
             
             <!-- Footer -->
             <footer class="page-section bg-dark light-content footer pb-100 pb-sm-50">
                 <div class="container">
                     
-                            <!-- Footer Logo -->
-        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-          <a href="http://secivi.org" target="_blank"><img src="img/secivi-white.png" width="256" alt="SECiVi" /></a>
-        </div>
-        <!-- End Footer Logo -->
-
+                    <!-- Footer Logo -->
+                    <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
+                        <a href="http://secivi.org" target="_blank"><img src="img/secivi-white.png" width="256" alt="SECiVi" /></a>
+                    </div>
+                    <!-- End Footer Logo -->
                 
                     <!-- Footer Text -->
                     <div class="footer-text">
-                        
                         <!-- Copyright -->
                         <div class="footer-copy">
                             © SECiVi 2026.
                         </div>
                         <!-- End Copyright -->
-                        
                     </div>
                     <!-- End Footer Text --> 
                     
-                 </div>
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to top</span></a>
-                 </div>
-                 <!-- End Top Link -->
+                </div>
+                
+                <!-- Top Link -->
+                <div class="local-scroll">
+                    <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i><span class="sr-only">Scroll to top</span></a>
+                </div>
+                <!-- End Top Link -->
                  
             </footer>
             <!-- End Footer -->
         
         </div>
         <!-- End Page Wrap -->
-        
         
         <!-- JS -->
         <script src="js/jquery.min.js"></script>
@@ -274,6 +261,7 @@
         <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/objectFitPolyfill.min.js"></script>
         <script src="js/splitting.min.js"></script>
+        <script src="js/i18n.js"></script>
         
     </body>
 </html>
