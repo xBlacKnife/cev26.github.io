@@ -92,13 +92,17 @@
                             <!-- End Divider -->
                             <li><a href="contacto.html" class="active" data-i18n="nav_contact">...</a></li>
                             <!-- Language Toggle -->
-                            <li>
-                                <button id="lang-toggle" onclick="toggleLang()"
+                            <li style="padding:5px 0px;">
+                                <button id="lang-toggle" onclick="toggleLang('es')"
+                                    title="Cambiar a español"
+                                    style="background:none;border:none;
+                                           color:inherit;cursor:pointer;">
+                                           <img src="img/lang_es.png" style="width:30px"></button>
+                                <button id="lang-toggle" onclick="toggleLang('en')"
                                     title="Switch to English"
-                                    style="background:none;border:1px solid rgba(255,255,255,0.5);
-                                           color:inherit;cursor:pointer;padding:4px 10px;
-                                           border-radius:4px;font-size:0.9em;font-weight:600;
-                                           margin-left:4px;">EN</button>
+                                    style="background:none;border:none;
+                                           color:inherit;cursor:pointer;">
+                                           <img src="img/lang_en.png" style="width:30px"></button>
                             </li>
                             <!-- End Language Toggle -->
                         </ul>

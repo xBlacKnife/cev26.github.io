@@ -13,7 +13,7 @@ const translations = {
   nav_venue:          { es: "Sede y alojamiento",  en: "Venue & Hotels" },
   nav_editions:       { es: "Ediciones anteriores",en: "Previous Editions" },
   nav_contact:        { es: "Contacto",            en: "Contact" },
-  lang_btn:           { es: "EN",                  en: "ES" },
+  //lang_btn:           { es: "EN",                  en: "ES" },
   lang_btn_title:     { es: "Switch to English",   en: "Cambiar a Español" },
 
   // ── index.html ───────────────────────────────────────────────
@@ -190,9 +190,8 @@ function applyTranslations() {
   }
 }
 
-function toggleLang() {
-  const current = getLang();
-  setLang(current === 'es' ? 'en' : 'es');
+function toggleLang(lang) {
+  setLang(lang);
   applyTranslations();
 }
 
